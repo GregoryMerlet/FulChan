@@ -1,8 +1,8 @@
 # FulChan
 
-## Client d'un système de chat
+An Angular project made at school.
 
-## Membres de l'équipe "Fulguris" :
+## "Fulguris" team members :
 - CANAVA Thomas
 - CASAGRANDE Guillaume
 - LARZABAL Thibault
