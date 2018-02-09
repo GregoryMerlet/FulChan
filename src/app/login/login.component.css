@@ -1,0 +1,56 @@
+.logout {
+  content: url("../../images/logout.png");
+  width: 20px;
+  height: 20px;
+}
+.user {
+  content: url("../../images/user.png");
+  width: 20px;
+  height: 20px;
+}
+
+#loginPage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4000;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(14, 14, 14, 0.75);
+}
+
+#alertLogin {
+  color: red;
+}
+
+#loginBox {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto auto;
+  text-align: center;
+}
+
+#user {
+  margin-bottom: 10px;
+}
+
+.btn-success {
+  background: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:visited, .btn-success:focus {
+  background: #0389d5;
+  border-color: #0389d5;
+}
+
+#logoutBox {
+  text-align: right;
+  padding: 5px;
+}
+
+#welcome {
+  margin-right: 10px;
+  margin-left: 5px;
+}

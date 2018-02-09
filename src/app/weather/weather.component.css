@@ -1,0 +1,102 @@
+.weatherComponent {
+  height: 100%;
+  padding: 3px;
+}
+
+div > img {
+  margin-top: 4px;
+  width: 50px;
+  height: 50px;
+}
+
+#storm {
+  content: url("../../images/storm.svg");
+}
+
+#cloudy {
+  content: url("../../images/cloudy.svg");
+}
+
+#drizzle {
+  content: url("../../images/drizzle.svg");
+}
+
+#rain {
+  content: url("../../images/rain.svg");
+}
+
+#snow {
+  content: url("../../images/snow.svg");
+}
+
+#sun {
+  content: url("../../images/sun.svg");
+}
+
+#tornado {
+  content: url("../../images/tornado.svg");
+}
+
+.weather {
+  content: url("../../images/weather.svg");
+}
+
+#lookfor {
+  content: url("../../images/lookfor.svg");
+}
+
+button > img {
+  width: 38px;
+  height: 38px;
+}
+
+.buttonBox, #tempBox, #weatherBox, #imageBox {
+  display : flex;
+  align-items : center;
+  padding: 0px;
+}
+
+#weatherBox {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#temp {
+  font-size: 15pt;
+  margin: auto 10px auto auto;
+}
+
+#weatherContent {
+  display: block;
+  margin: auto auto;
+  max-width: 100%;
+}
+
+#place, #description {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#searchTown {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#searchTown > img {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-primary {
+  background: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.btn-primary:hover {
+  background: #0389d5;
+  border-color: #0389d5;
+}

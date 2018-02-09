@@ -1,0 +1,58 @@
+#threadBar {
+  background: #03A9F4;
+  height: 100%;
+  padding: 5px;
+}
+
+.chatBubble {
+  content: url("../../images/chatBubbleWhite.png");
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.editImage {
+  content: url("../../images/editBlue.png");
+  width: 20px;
+  height: 20px;
+}
+
+#threadName * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#threadH{
+  height: 100%;
+  width: 85%;
+  max-width: 85%;
+  margin-left: 50px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#threadIn{
+  height: 100%;
+  width: 50%;
+  margin-left: 45px;
+  display: inline;
+}
+
+.thread-button {
+  display: block;
+  float: right;
+}
+
+.btn-primary {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #03A9F4;
+}
+
+.btn-primary:hover {
+  background: #dcdcdc;
+  border-color: #dcdcdc;
+}

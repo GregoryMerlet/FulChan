@@ -1,0 +1,9 @@
+<div [class.myMessage]="isMyMessage" class="message">
+  <p class="from"><strong>{{message.from}}</strong>:</p>
+  <p class="content">{{text}}</p>
+  <a *ngFor="let picture of pictures" href="{{picture}}" target="_blank"><img src="{{picture}}" class="image"><br></a>
+  <div>
+    <iframe class="iframe" *ngFor="let youtube of links" [src]="youtube|safe" frameborder="0" height="220" width="400"></iframe>
+  </div>
+  <span class="hour">{{message.createdAt|dateFormat}}</span>
+</div>

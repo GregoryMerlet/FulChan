@@ -1,0 +1,63 @@
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#cardContainer {
+  height: 100vh;
+}
+
+app-thread-form {
+  display: block;
+  height: 7%;
+}
+
+app-thread-list {
+  display: block;
+  height: 93%;
+  width: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+app-thread-bar {
+  display: block;
+  height: 7%;
+}
+
+app-message-list {
+  display: block;
+  height: 63%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #e9ebee;
+}
+
+app-message-form {
+  display: block;
+  height: 30%;
+}
+
+#messageCol {
+  background: #e9ebee;
+  padding: 0;
+}
+
+#threadCol {
+  background: #7a7b7d;
+  padding: 0;
+}
+
+#header {
+  min-height: 8%;
+}
+
+#titleBox {
+  margin: auto auto;
+}

@@ -1,0 +1,36 @@
+<div id="messageFormBox">
+  <div id="messageFormContainer">
+    <div #channelName id="schedule" *ngIf="schedulePanel">
+      Envoyer dans le channel
+      <input #channelInput class="form-control" type="text"  placeholder="Nom du channel" value="{{actualThread.name}}">
+      <label class="scheduleOption">
+        <input #option1 class="form-control" type="radio" name="schedule" value="hour">
+        À <input #option1Input class="form-control" (value)="option1value" type="time" (click)="option1.click()">
+      </label>
+      <label class="scheduleOption">
+        <input #option2 class="form-control" type="radio" name="schedule" value="time">
+        Dans <input #option2Input class="form-control" type="number" min="0" value="0" (click)="option2.click()">
+        secondes
+      </label>
+    </div>
+    <div id="smileys">
+      <button *ngFor="let smiley of smileyList" title="{{smileyMap.get(smiley)}}" (click)="addToMessage(smiley)">
+        {{smiley}}
+      </button>
+    </div>
+    <div id="textBar" class="input-group">
+      <input type="text" class="form-control" autocomplete="off" id="content" placeholder="Message" required
+             [(ngModel)]="message.content" (keyup.enter)="sendMessage()" name="name">
+      <button id="scheduleBtn" class="btn btn-primary" (click)="switchSchedulePanel()"  title="Envoyer un message différé"><img id="scheduleImg"></button>
+    </div>
+    <p id="alertMessage" *ngIf="errorMessage">{{errorMessageText}}</p>
+    <a href="#" class="tip"><img class="infos" ><span id="infos">{{infos}}</span></a>
+    <button id="translateBtn" class="btn btn-primary" (click)="traduct()">
+      Traduire vers
+      <select #languageSelect class="form-control translateSelect">
+        <option *ngFor="let language of languagesList" value="{{languagesMap.get(language)}}">{{language}}</option>
+      </select>
+    </button>
+    <button id="send" class="btn btn-primary" (click)="sendMessage()" title="Envoyer un message">Envoyer</button>
+  </div>
+</div>

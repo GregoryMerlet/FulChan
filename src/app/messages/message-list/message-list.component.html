@@ -1,0 +1,6 @@
+<div *ngIf="pageAvailable">
+  <button id="seeMore" class="btn btn-primary" (click)="addMoreMessages()">Voir plus</button>
+</div>
+<div *ngFor="let currentMessage of messageList|reverse;trackBy:trackByMessageID">
+  <app-message [message]="currentMessage"></app-message>
+</div>

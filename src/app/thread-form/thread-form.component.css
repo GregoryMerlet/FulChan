@@ -1,0 +1,39 @@
+.btn-primary {
+  background: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.btn-primary:hover {
+  background: #0389d5;
+  border-color: #0389d5;
+}
+
+#threadForm {
+  padding: 5px;
+  height: 100%;
+  margin: 0;
+}
+
+.add {
+  content: url("../../images/add.png");
+  width: 25px;
+  height: 25px;
+}
+
+.wrong {
+  background: #FA8072;
+}
+
+.right {
+  background: #98FB98;
+}
+
+#name {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#addBtn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}

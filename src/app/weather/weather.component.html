@@ -1,0 +1,31 @@
+<div *ngIf="state == 0" class="row weatherComponent">
+  <div class="col-md-2 buttonBox">
+    <button class="btn btn-primary" (click)="next()" title="Météo"><img class="weather"></button>
+  </div>
+</div>
+
+<div *ngIf="state == 1" class="row weatherComponent">
+  <div class="col-md-2 buttonBox">
+    <button class="btn btn-primary" (click)="next()" title="Météo"><img class="weather"></button>
+  </div>
+  <div id="weatherForm" class="col-md-10 input-group">
+    <input id="townInput" class="form-control" type="text" placeholder="Ville" [(ngModel)]="answer" (keyup.enter)="searchTown()">
+    <button id="searchTown" class="btn btn-primary" (click)="searchTown()"><img id="lookfor" /></button>
+  </div>
+</div>
+
+<div *ngIf="state == 2" class="row weatherComponent">
+  <div class="col-md-2 buttonBox">
+    <button class="btn btn-primary" (click)="next()" title="Météo"><img class="weather"></button>
+  </div>
+  <div id="weatherBox">
+    <div id="weatherContent">
+      <strong id="place">{{weatherTown.town}}</strong>
+      <span id="description">{{weatherTown.description}}</span>
+    </div>
+  </div>
+  <div id="tempBox">
+    <strong id="temp">{{weatherTown.temp}}°C</strong>
+    <img id="{{picture}}">
+  </div>
+</div>

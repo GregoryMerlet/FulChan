@@ -1,0 +1,14 @@
+<div id="threadBar">
+  <div *ngIf="!isOnEdit" id="threadName" class="col-md-12">
+    <img class="chatBubble">
+    <h2 id="threadH">{{actualThread.name}}</h2>
+    <button class="btn btn-primary thread-button" (click)="switchEditMode()">
+      <img class="editImage" title="Modifier le channel">
+    </button>
+  </div>
+  <div *ngIf="isOnEdit" id="threadEdit" class="col-md-10">
+    <img class="chatBubble">
+    <input id="threadIn" (keyup.enter)="changeName()" type="text" required [(ngModel)]="actualThread.name" class="form-control">
+    <button class="btn btn-primary" (click)="changeName()">OK</button>
+  </div>
+</div>

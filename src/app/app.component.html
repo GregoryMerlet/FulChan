@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div id="cardContainer" class="col-md-12 card">
+      <div id="header" class="row">
+        <app-weather class="col-md-4"></app-weather>
+        <div id="titleBox" class="col-md-4">
+          <h1>{{title}}</h1>
+        </div>
+        <app-login class="col-md-4"></app-login>
+      </div>
+      <div class="row">
+        <div id="threadCol" class="col-md-3">
+          <app-thread-form></app-thread-form>
+          <app-thread-list></app-thread-list>
+        </div>
+        <div id="messageCol" class="col-md-9">
+          <app-thread-bar></app-thread-bar>
+          <app-message-list id="appMessage"></app-message-list>
+          <app-message-form></app-message-form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

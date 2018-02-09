@@ -1,0 +1,4 @@
+<div id="threadForm" class="row">
+  <input #nameInput type="text" autocomplete="off" class="form-control col-md-10" placeholder="Ajouter un channel" id="name" (keyup)="checkValidity()" (keyup.enter)="createThread()" [(ngModel)]="thread.name">
+  <button id="addBtn" class="btn btn-primary col-md-2" type="reset" (click)="createThread()"><img class="add" /></button>
+</div>

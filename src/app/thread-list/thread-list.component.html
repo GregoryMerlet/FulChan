@@ -1,0 +1,5 @@
+<ul id="threadList">
+  <li class="thread" *ngFor="let currentThread of threadList" (click)="changeThread(currentThread)" id="thread{{currentThread.id}}">
+    <img class="chatBubble"><a class="threadLink" href="#">{{currentThread.name}}</a>
+  </li>
+</ul>

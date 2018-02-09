@@ -1,0 +1,14 @@
+<div id="loginPage" class="row" *ngIf="!isLogin">
+  <div id="loginBox">
+    <h3>Connexion</h3>
+    <input type="text" autocomplete="off" class="form-control" id="user" placeholder="Nom" (keyup.enter)="login()" required [(ngModel)]="user" name="name2">
+    <p id="alertLogin" *ngIf="!loginValid">Attention le nom d'utilisateur ne peut contenir que des minuscules sans espace.</p>
+    <button id ="login" class="btn btn-success" (click)="login()">Connexion</button>
+  </div>
+</div>
+<div id="logoutBar" *ngIf="isLogin">
+  <div id="logoutBox">
+    <img class="user" /><span id="welcome">Vous êtes connecté en tant que : {{user}}</span>
+    <button id ="logout" class="btn btn-danger" (click)="logout()" title="Se déconnecter"><img class="logout" /></button>
+  </div>
+</div>

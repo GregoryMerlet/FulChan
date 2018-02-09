@@ -1,0 +1,44 @@
+.message {
+  background: white;
+  margin: 10px 30% 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px #656565;
+}
+
+.myMessage {
+  background: #81D4FA;
+  margin: 10px 10px 10px 30%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px #656565;
+}
+
+.hour {
+  float: right;
+  position: relative;
+  bottom: 6px;
+  font-size: 9pt;
+}
+
+.content {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.from {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+p {
+  margin: 0px;
+}
+
+.image {
+  width: 50%;
+}
+
+.iframe {
+  width: 50%;
+}
